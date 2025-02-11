@@ -1,14 +1,10 @@
-package main;
+package jogadores;
 
 import java.util.ArrayList;
 
 public class JogadorNormal extends Jogador {
     public JogadorNormal(String cor) {
         super(cor);
-    }
-
-    public JogadorNormal(String cor, int posicao, int quantidadeDeJogadas) {
-        super(cor, posicao, quantidadeDeJogadas);
     }
 
     @Override

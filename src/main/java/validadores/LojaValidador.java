@@ -1,0 +1,21 @@
+package validadores;
+
+import java.util.ArrayList;
+
+import exceptions.InvalidUserInputException;
+
+public class LojaValidador implements Validador {
+    public void validar(String userInput) throws InvalidUserInputException {
+        ArrayList<String> respostasValidas = new ArrayList<>();
+        respostasValidas.add("bone");
+        respostasValidas.add("moleton");
+        respostasValidas.add("oculos escuros");
+        respostasValidas.add("sair");
+        if (!respostasValidas.contains(userInput)) {
+            throw new InvalidUserInputException();
+        }
+        if (userInput.length() == 0) {
+            throw new InvalidUserInputException();
+        }
+    }
+}
